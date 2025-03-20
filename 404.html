@@ -1,109 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/404.css">
+    <meta name="keywords" content="404, page not found, yash jangid, portfolio" />
+    <meta name="description" content="Page not found - Yash Jangid's Portfolio" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/modern-theme.css">
+    <link rel="stylesheet" href="./assets/css/404.css">
+    
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-png">
-    <title>Got Lost! Page Not Found</title>
+    <link id="favicon" rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
+    <title>404 Page Not Found | Yash Jangid</title>
 </head>
-<body oncontextmenu="return false">
+<body>
 
-<!-- navbar starts -->
+<!-- Navbar -->
 <header>
-        <a href="/" class="logo"><i class="fab fa-node-js"></i> Yash</a>
+    <div class="container navbar-container">
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> Yash Jangid</a>
 
-        <div id="menu" class="fas fa-bars"></div>
+        <div id="theme-toggle" class="theme-toggle">
+            <i id="theme-icon" class="fas fa-moon"></i>
+        </div>
+
+        <div id="menu-btn" class="menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
         <nav class="navbar">
             <ul>
-            <li><a href="/#home">Home</a></li>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#skills">Skills</a></li>
-            <li><a href="/#education">Education</a></li>
-            <li><a href="/#work">Work</a></li>
-            <li><a href="/#experience">Experience</a></li>
-            <li><a href="/#contact">Contact</a></li>
+                <li><a href="/#home">Home</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#skills">Skills</a></li>
+                <li><a href="/#education">Education</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#experience">Experience</a></li>
+                <li><a href="/#contact">Contact</a></li>
             </ul>
         </nav>
+    </div>
 </header>
-<!-- navbar ends -->
 
-<!-- 404 section start -->
-<section class="page_404">
-        <div class="container">
-          <div class="wrapper">
-            <h1 class="text-center ">404</h1>
-          </div>
-          
-          <div class="msg">
-          <h3>Looks like you're lost</h3>
-          <p>The page you are looking for is not available!</p>
-           
-          <div class="backbtn">
-            <a href="/" class="btn">
-                <i class="fas fa-arrow-left"></i>
-                <span>Back to Home</span>
-          </a>
-          </div>
-
-          </div>
+<!-- 404 Section -->
+<section class="page-404">
+    <div class="container">
+        <div class="error-container" data-aos="fade-up">
+            <div class="error-image">
+                <img src="https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif" alt="404 Animation">
+            </div>
+            
+            <div class="error-content">
+                <h1 class="error-title">404</h1>
+                <h2 class="error-subtitle">Looks like you're lost</h2>
+                <p class="error-text">The page you are looking for is not available or has been moved!</p>
+                
+                <a href="/" class="btn primary-btn">
+                    <i class="fas fa-home"></i>
+                    <span>Back to Home</span>
+                </a>
+            </div>
         </div>
+    </div>
+    
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
 </section>
-<!-- 404 section end -->
 
-<!-- footer section starts -->
-<section class="footer">
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="/">
+                    <i class="fab fa-node-js"></i>
+                    <span>Yash Jangid</span>
+                </a>
+                <p>Full Stack Developer specializing in MERN/MEAN stack, Web3 and blockchain technologies.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="/#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                    <li><a href="/#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                    <li><a href="/#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                    <li><a href="/#experience"><i class="fas fa-chevron-right"></i> Experience</a></li>
+                    <li><a href="/#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan, India - 302012</p>
+                <p><i class="fas fa-phone-alt"></i> +91 6377966657</p>
+                <p><i class="fas fa-envelope"></i> gityash2024@gmail.com</p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/yash-jangid-397420166/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/gityash2024" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:gityash2024@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kashapyash/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 <span>Yash Jangid</span> | All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
 
-  <div class="box-container">
+<!-- Scripts -->
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-      <div class="box">
-          <h3>Yash's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
-      </div>
+<!-- AOS Animation Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-      <div class="box">
-          <h3>quick links</h3>
-          <a href="/#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="/#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="/#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="/#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-          <a href="/#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-          <a href="/#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
-      </div>
-
-      <div class="box">
-          <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+91 704-302-4736</p>
-          <p> <i class="fas fa-envelope"></i>yashjangid091099@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Jaiour (Raj), India-302012</p>
-          <div class="share">
-
-              <a href="https://www.linkedin.com/in/yash-jangid-397420166/" class="fab fa-linkedin" target="_blank"></a>
-              <a href="https://github.com/yash500071155" class="fab fa-github" target="_blank"></a>
-              <a href="https://www.instagram.com/kashapyash/" class="fab fa-instagram" target="_blank"></a>
-              <a href="mailto:yashjangid091099@gmail.com" class="fas fa-envelope" target="_blank"></a>
-          </div>
-      </div>
-  </div>
-
-  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/yash-jangid-397420166/" target="_blank"> Yash Jangid</a></h1>
-
-</section>
-<!-- footer section ends -->
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
-<script src="/assets/js/404.js"></script>
-
+<!-- Custom JS -->
+<script src="./assets/js/404.js"></script>
 
 </body>
 </html>

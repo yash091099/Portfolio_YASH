@@ -1,371 +1,894 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="yash jangid, portfolio, yash, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
-    <meta name="description" content="Welcome to Yash's Portfolio. Full-Stack Web Developer Developer" />
-    <!-- Custom CSS -->
+    <meta name="keywords" content="yash jangid, portfolio, yash, full stack dev, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Yash Jangid's Portfolio. Full-Stack Web Developer specializing in MERN/MEAN stack, Web3 and blockchain technologies." />
+    
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <link rel="stylesheet" href="./assets/css/modern-theme.css">
+    <link rel="stylesheet" href="./assets/css/Loader.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link id="favicon" rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
     <title>Portfolio | Yash Jangid</title>
 </head>
-<body oncontextmenu="return false">
+<body>
 
-<!-- pre loader -->
-<!-- <div class="loader-container">
-  <img draggable="false" src="./assets/images/preloader.gif" alt="">
-</div> -->
-
-<!-- navbar starts -->
-<header>
-        <a href="/" class="logo"><i class="fab fa-node-js"></i> Yash</a>
-
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-</header>
-<!-- navbar ends -->
-
-
-<!-- hero section starts -->
-<section class="home" id="home">
-    <div id="particles-js"></div>
-
-    <div class="content">
-    <h2>Hi There,<br/> I'm Yash <span>Jangid</span></h2>
-    <p>i am into <span class="typing-text"></span></p>
-    <a href="#about" class="btn"><span>About Me</span>
-      <i class="fas fa-arrow-circle-down"></i>
-    </a>
-    <div class="socials">
-        <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/yash-jangid-397420166/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-          <li><a class="github" aria-label="GitHub" href="https://github.com/yash500071155" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/kashapyash/" target="_blank"><i class="fab fa-instagram" target="_blank"></i></a></li>
-        </ul>
-      </div>
-    </div>
-<div class="image">
-    <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
-</div>
-</section>
-<!-- hero section ends -->
-
-
-<!-- about section starts -->
-<section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    
-    <div class="row">
-
-    <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="">
-    </div>
-    <div class="content">
-        <h3>I'm Yash</h3>
-        <span class="tag">Full Stack Developer</span>
-        
-        <p>I am a Full-Stack developer based in Jaipur, India. 
-          I am an Information Technology graduate from UPES.
-          I am very passionate about improving my coding skills & developing applications & websites.
-          I build WebApps and Websites using MERN & MEAN Stack.
-          Working for myself to improve my skills.
-          Love to build Full-Stack clones. </p>
-        
-        <div class="box-container">
-            <!-- <div class="box">
-              <p><span> age: </span> 20</p>
-              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
-            </div> -->
-            <div class="box">
-              <p><span> email : </span> yashjangid091099@gmail.com</p>
-              <p><span> place : </span> Jaipur (Raj), India - 302012</p>
-              <p><span> Contact : </span> +91-6377966657</p>
+<div class="preloader">
+    <div class="code-loader">
+        <div class="code-loader-header">
+            <div class="code-dots">
+                <div class="code-dot"></div>
+                <div class="code-dot"></div>
+                <div class="code-dot"></div>
+            </div>
+            <div class="code-title">portfolio.js</div>
+        </div>
+        <div class="code-editor">
+            <div class="code-line">
+                <div class="code-line-number">1</div>
+                <div class="code-content">
+                    <span class="code-keyword">class</span> <span class="code-class">Developer</span> {
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">2</div>
+                <div class="code-content">
+                    &nbsp;&nbsp;<span class="code-keyword">constructor</span>() {
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">3</div>
+                <div class="code-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span class="code-variable">name</span> <span class="code-operator">=</span> <span class="code-string">"Yash Jangid"</span>;
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">4</div>
+                <div class="code-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span class="code-variable">title</span> <span class="code-operator">=</span> <span class="code-string">"Full Stack Developer"</span>;
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">5</div>
+                <div class="code-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.<span class="code-variable">skills</span> <span class="code-operator">=</span> [<span class="code-string">"MERN"</span>, <span class="code-string">"MEAN"</span>, <span class="code-string">"Web3"</span>, <span class="code-string">"Blockchain"</span>];
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">6</div>
+                <div class="code-content">
+                    &nbsp;&nbsp;}
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">7</div>
+                <div class="code-content">
+                    &nbsp;&nbsp;<span class="code-function">loadPortfolio</span>() {
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">8</div>
+                <div class="code-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-keyword">new</span> <span class="code-class">Promise</span>((<span class="code-variable">resolve</span>) <span class="code-operator">=></span> {
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">9</div>
+                <div class="code-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">console</span>.<span class="code-function">log</span>(<span class="code-string">"Loading projects and experience..."</span>);
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">10</div>
+                <div class="code-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">setTimeout</span>(() <span class="code-operator">=></span> <span class="code-variable">resolve</span>(<span class="code-string">"Portfolio loaded!"</span>), <span class="code-variable">5000</span>);
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">11</div>
+                <div class="code-content">
+                    &nbsp;&nbsp;&nbsp;&nbsp;});
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">12</div>
+                <div class="code-content">
+                    &nbsp;&nbsp;}
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">13</div>
+                <div class="code-content">
+                    }
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">14</div>
+                <div class="code-content">
+                    <span class="code-keyword">const</span> <span class="code-variable">me</span> <span class="code-operator">=</span> <span class="code-keyword">new</span> <span class="code-class">Developer</span>();
+                </div>
+            </div>
+            <div class="code-line">
+                <div class="code-line-number">15</div>
+                <div class="code-content">
+                    <span class="code-variable">me</span>.<span class="code-function">loadPortfolio</span>().<span class="code-function">then</span>(<span class="code-function">init</span>) <span class="code-cursor"></span>
+                </div>
+            </div>
+            
+            <div class="code-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <span>Loading...</span>
             </div>
         </div>
         
-        <div class="resumebtn">
-            <a href="https://drive.google.com/file/d/1xM9KjyEMRubT7sVztAEdzTQKf9FpJdSF/view?usp=sharing" target="_blank" class="btn"><span>Resume</span>
-                <i class="fas fa-chevron-right"></i>
+        <div class="loader-message">
+            Welcome to my portfolio! Just a moment...
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="container navbar-container">
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> Yash Jangid</a>
+
+        <div id="theme-toggle" class="theme-toggle">
+            <i id="theme-icon" class="fas fa-moon"></i>
+        </div>
+
+        <div id="menu-btn" class="menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="home" id="home">
+    <div class="particles-container" id="particles-js"></div>
+    <div class="container">
+        <div class="content" data-aos="fade-right" data-aos-delay="300">
+            <h1>Hi There, <br>I'm <span class="gradient-text">Yash Jangid</span></h1>
+            <p>I'm a <span class="typing-text"></span></p>
+            
+            <div class="cta-buttons">
+                <a href="#about" class="btn primary-btn">
+                    <span>About Me</span>
+                    <i class="fas fa-user-alt"></i>
+                </a>
+                <a href="#contact" class="btn secondary-btn">
+                    <span>Hire Me</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/yash-jangid-397420166/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/gityash2024" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:gityash2024@gmail.com" target="_blank" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.instagram.com/kashapyash/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="image" data-aos="fade-left" data-aos-delay="600">
+            <img src="./assets/images/yash.png" alt="Hero Image">
+      </div>
+    </div>
+    
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">About <span>Me</span></h2>
+        
+        <div class="about-content">
+            <div class="image" data-aos="fade-right" data-aos-delay="300">
+                <img src="./assets/images/profile2.jpg" alt="Yash Jangid">
+            </div>
+            
+            <div class="content" data-aos="fade-left" data-aos-delay="300">
+                <h3>I'm Yash</h3>
+                <div class="bio-tag"><span class="gradient-text">Senior Full Stack Developer</span></div>
+                
+                <p>Senior Full Stack Developer with 3+ years of experience specializing in MERN/MEAN stacks, blockchain technologies, and Web3 solutions. Proven track record in delivering scalable web applications, integrating blockchain solutions, and developing high-performance market-making tools.</p>
+                
+                <p>Strong expertise in both frontend and backend development with additional proficiency in mobile app development and AI integration.</p>
+                
+                <div class="personal-info">
+                    <div class="info-item">
+                        <span class="info-title"><i class="fas fa-envelope"></i> Email:</span>
+                        <span class="info-value contact-cta">gityash2024@gmail.com</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-title"><i class="fas fa-map-marker-alt"></i> Location:</span>
+                        <span class="info-value">Jaipur, India - 302012</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-title"><i class="fas fa-phone"></i> Contact:</span>
+                        <span class="info-value contact-cta">+91 6377966657</span>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="info-title"><i class="fas fa-user-graduate"></i> Degree:</span>
+                        <span class="info-value">B.Tech in Computer Science</span>
+            </div>
+        </div>
+        
+                <div class="resume-btn">
+                    <a href="./resume_yash_jangid.pdf" target="_blank" class="btn primary-btn">
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+    </div>
+    </div>
+</section>
+
+<section class="skills" id="skills">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">My <span>Skills</span></h2>
+        
+        <div class="skills-container">
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h4>HTML5</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <h4>CSS3</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-php"></i></div>
+                        <h4>PHP</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>SQL</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                        <h4>TypeScript</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                <h3>Frontend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <h4>React</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-angular"></i></div>
+                        <h4>Angular</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <h4>React Native</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-sass"></i></div>
+                        <h4>SCSS</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                        <h4>Bootstrap</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <h4>Redux</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                <h3>Backend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <h4>Node.js</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <h4>Express.js</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>MongoDB</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                        <h4>Laravel</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h4>GraphQL</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>Redis</h4>
+                    </div>
+                </div>
+              </div>
+            
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
+                <h3>DevOps & Web3</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-ethereum"></i></div>
+                        <h4>Ethereum</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <h4>Git</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                        <h4>Docker</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                        <h4>AWS</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-digital-ocean"></i></div>
+                        <h4>Digital Ocean</h4>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-bitcoin"></i></div>
+                        <h4>Blockchain</h4>
+                    </div>
+                </div>
+            </div>
+      </div>
+</div>
+    
+    <div class="shape shape-1"></div>
+</section>
+
+<section class="education" id="education">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">My <span>Education</span></h2>
+        
+        <div class="education-container">
+            <div class="education-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                
+                <div class="education-content">
+                    <span class="year">2018 - 2022</span>
+        <h3>Bachelor of Engineering in Computer Science</h3>
+                    <p>University Of Petroleum & Energy Studies (UPES) | GPA: 8.9</p>
+                    <p>Successfully completed bachelor's in BTECH CSE.</p>
+        </div>
+    </div>
+
+            <div class="education-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="education-icon">
+                    <i class="fas fa-school"></i>
+      </div>
+                
+                <div class="education-content">
+                    <span class="year">2005 - 2018</span>
+      <h3>School Education | Informatic Practices</h3>
+                    <p>Gyan Jyoti Senior Sec. School | RBSE</p>
+                    <p>Completed schooling with focus on computer science and information technology.</p>
+                </div>
+            </div>
+      </div>
+    </div>
+
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+</section>
+
+<section class="projects" id="projects">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">My <span>Projects</span></h2>
+        
+        <div class="project-filter" data-aos="fade-up" data-aos-delay="300">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web3">Web3</button>
+            <button class="filter-btn" data-filter="mern">MERN Stack</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+        </div>
+        
+        <div class="projects-container">
+            <div class="project-card" data-category="web3" data-aos="fade-up" data-aos-delay="400">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="CEX/DEX Strategy Portal">
+                </div>
+                
+                <div class="project-content">
+                    <h3>CEX/DEX Strategy Portal</h3>
+                    <p>Developed comprehensive platform for managing trading strategies across centralized and decentralized exchanges.</p>
+                    
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Web3.js</span>
+        </div>
+                    
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn project-btn">
+                            <i class="fas fa-eye"></i> Demo
+                        </a>
+                        <a href="https://github.com/gityash2024" target="_blank" class="btn project-btn">
+                            <i class="fas fa-code"></i> Code
+                        </a>
+          </div>
+        </div>
+      </div>
+
+            <div class="project-card" data-category="web3" data-aos="fade-up" data-aos-delay="500">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1621504450181-5d356f61d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="Trade Machine Portal">
+</div>
+
+                <div class="project-content">
+                    <h3>Trade Machine Portal</h3>
+                    <p>A comprehensive platform where users can place orders to multiple exchanges at same time and are able to save orders for bulk trades.</p>
+                    
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Redux</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+</div>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn project-btn">
+                            <i class="fas fa-eye"></i> Demo
+                        </a>
+                        <a href="https://github.com/gityash2024" target="_blank" class="btn project-btn">
+                            <i class="fas fa-code"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card" data-category="web3" data-aos="fade-up" data-aos-delay="600">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="TDX Launchpad">
+                </div>
+                
+                <div class="project-content">
+                    <h3>TDX Launchpad</h3>
+                    <p>Built crypto launchpad for low-cap cryptocurrency coins, streamlining the token launch process.</p>
+                    
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Web3.js</span>
+                        <span>Solidity</span>
+                        <span>Node.js</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn project-btn">
+                            <i class="fas fa-eye"></i> Demo
+                        </a>
+                        <a href="https://github.com/gityash2024" target="_blank" class="btn project-btn">
+                            <i class="fas fa-code"></i> Code
+                        </a>
+        </div>
+      </div>
+    </div>
+
+            <div class="project-card" data-category="mern" data-aos="fade-up" data-aos-delay="700">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="Coinbuck">
+                </div>
+                
+                <div class="project-content">
+                    <h3>Coinbuck</h3>
+                    <p>Created crypto reward platform that incentivizes social media engagement on Twitter, LinkedIn, and Facebook.</p>
+                    
+                    <div class="project-tech">
+                        <span>MERN Stack</span>
+                        <span>OAuth</span>
+                        <span>Social APIs</span>
+          </div>
+                    
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn project-btn">
+                            <i class="fas fa-eye"></i> Demo
+                        </a>
+                        <a href="https://github.com/gityash2024" target="_blank" class="btn project-btn">
+                            <i class="fas fa-code"></i> Code
+                        </a>
+          </div>
+        </div>
+      </div>
+
+            <div class="project-card" data-category="mern" data-aos="fade-up" data-aos-delay="800">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="Oshodhara">
+                </div>
+                
+                <div class="project-content">
+                    <h3>Oshodhara</h3>
+                    <p>Developed room booking platform for Oshodhara temple in Haryana with integrated payment systems.</p>
+                    
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+          </div>
+                    
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn project-btn">
+                            <i class="fas fa-eye"></i> Demo
+                        </a>
+                        <a href="https://github.com/gityash2024" target="_blank" class="btn project-btn">
+                            <i class="fas fa-code"></i> Code
+                        </a>
+          </div>
+        </div>
+      </div>
+
+            <div class="project-card" data-category="frontend" data-aos="fade-up" data-aos-delay="900">
+                <div class="project-img">
+                    <img src="https://images.unsplash.com/photo-1492305175278-3b3afaa2f31f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="Sacred Groves">
+                </div>
+                
+                <div class="project-content">
+                    <h3>Sacred Groves</h3>
+                    <p>Developed environmental gifting platform with subscription and one-time payment options, currently serving 3K+ active users.</p>
+                    
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Stripe API</span>
+  </div>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn project-btn">
+                            <i class="fas fa-eye"></i> Demo
+                        </a>
+                        <a href="https://github.com/gityash2024" target="_blank" class="btn project-btn">
+                            <i class="fas fa-code"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="empty-projects" id="empty-projects">
+            <svg class="coming-soon-svg" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+                <circle class="circle" cx="120" cy="120" r="100" />
+                <path class="code-line" fill="none" d="M60,80 L100,120 L60,160" />
+                <path class="code-line" fill="none" d="M180,80 L140,120 L180,160" />
+                <path class="code-line" fill="none" d="M110,60 L130,180" />
+                <circle class="gear" cx="180" cy="60" r="15" />
+                <circle class="gear" cx="60" cy="60" r="15" />
+                <polygon class="star" points="120,40 125,50 135,52 128,60 130,70 120,65 110,70 112,60 105,52 115,50" />
+                <polygon class="star" points="180,130 185,140 195,142 188,150 190,160 180,155 170,160 172,150 165,142 175,140" />
+                <polygon class="star" points="60,130 65,140 75,142 68,150 70,160 60,155 50,160 52,150 45,142 55,140" />
+            </svg>
+            <h3>More Projects Coming Soon!</h3>
+            <p>We're working on amazing new projects in this category. Check back soon for updates!</p>
+        </div>
+        <div class="view-more" data-aos="fade-up" data-aos-delay="300">
+            <a href="#" class="btn primary-btn">
+                <span>View More Projects</span>
+                <i class="fas fa-project-diagram"></i>
             </a>
         </div>
-
-    </div>
-    </div>
-</section>
-<!-- about section ends -->
-
-<!-- skills section starts -->
-<section class="skills" id="skills">
-
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
-
-    <div class="container">
-          <div class="row" id="skillsContainer">
-
-            <!-- <div class="bar">
-              <div class="info">
-                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
-                <span>AdobeXD</span>
-              </div>
-            </div> -->
-
-      </div>
-</div>
-</section>
-<!-- skills section ends -->
-
-
-<!-- education section starts -->
-<section class="education" id="education">
-
-  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-
-    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
-
-    <div class="box-container">
-
-    <div class="box">
-        <div class="image">
-        <img draggable="false" src="./assets/images/educat/college.jpg" alt="">
-        </div>
-        <div class="content">
-        <h3>Bachelor of Engineering in Computer Science</h3>
-        <p>University Of Petroleum & Energy Studies | UGC</p>
-        <h4>2018-2022 | Completed</h4>
-        </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-      <img draggable="false" src="./assets/images/educat/school.jpg" alt="">
-      </div>
-      <div class="content">
-      <h3>School Education | Informatic Practices</h3>
-      <p>Gyan Jyoti Senior Sec. School| RBSE</p>
-      <h4>2005-2018 | Completed</h4>
-      </div>
-    </div>
-
-</div>
-</section>
-<!-- education section ends -->
-
-
-<!-- work project section starts -->
-<section class="work" id="work">
-
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made / Collaborate</span></h2>
-
-  <div class="box-container">
-
-    <!-- <div class="box tilt">
-      <img draggable="false" src="./assets/images/projects/portfolio1.PNG" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Portfolio Website</h3>
-        </div>
-        <div class="desc">
-          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
-          <div class="btns">
-            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
 </div>
 
-<!-- <div class="viewall">
-  <a href="./projects/index.html" class="btn"><span>View All</span>
-    <i class="fas fa-arrow-right"></i>
-</a> -->
-</div>
-
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
 </section>
-<!-- work project section ends -->
 
-<!-- experience section starts -->
 <section class="experience" id="experience">
-
-  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
-
-  <div class="timeline">
-
-    
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2>Self Employed</h2>
-        </div>
-        <div class="desc">
-            <h3>Full Stack Developer</h3>
-            <p>Jan 2020 - Present</p>
-        </div>
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Work <span>Experience</span></h2>
+        
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Jan 2022 - Present</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Full Stack Software Developer</h3>
+                    <h4>ITH TECHNOLOGIES PVT. LTD, Kanpur, India</h4>
+                    <ul>
+                        <li>Architected and deployed multiple Web3 platforms and blockchain-based applications, enhancing user experience and transaction efficiency</li>
+                        <li>Developed sophisticated market-making tools for 12+ centralized exchanges implementing spread, volume, and bulk strategies</li>
+                        <li>Created reusable npm packages including a "suggestion box" package to improve development efficiency</li>
+                        <li>Designed highly scalable project architectures using React, Angular, Node.js, and Express.js</li>
+                        <li>Led the development of microservices-based applications with Redis for improved performance</li>
+                    </ul>
+                </div>
       </div>
+            
+            <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>May 2021 - July 2021</span>
+                </div>
+                <div class="timeline-content">
+                    <h3>Frontend Developer (Internship)</h3>
+                    <h4>Foxmula Pvt Ltd, Jaipur, India</h4>
+                    <ul>
+                        <li>Enhanced scalability of college tutor platform "Minerva" by 300%, supporting user base growth from 10K to 40K+</li>
+                        <li>Optimized React codebase for improved performance and faster load times</li>
+                        <li>Implemented responsive design for better user experience across devices</li>
+                    </ul>
+                </div>
+        </div>
+            
+            <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Jan 2020 - Present</span>
+        </div>
+                <div class="timeline-content">
+                    <h3>Freelance Full Stack Developer</h3>
+                    <h4>Self Employed</h4>
+                    <ul>
+                        <li>Developed various web applications and platforms for clients across different industries</li>
+                        <li>Built responsive UI/UX designs following modern design principles</li>
+                        <li>Implemented full-stack solutions using MERN and MEAN stack technologies</li>
+                    </ul>
+        </div>
+        </div>
+        </div>
+        
+        <div class="awards" data-aos="fade-up" data-aos-delay="300">
+            <h3>Awards & Recognition</h3>
+            <div class="award-item">
+                <div class="award-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="award-content">
+                    <h4>Most Promising Newcomer (Jan 2023)</h4>
+                    <p>ITH Technologies Pvt Ltd - Outstanding individual in ITH Technologies</p>
+      </div>
+  </div>
+  </div>
     </div>
+    
+    <div class="shape shape-1"></div>
+</section>
 
-    <div class="container right">
-        <div class="content">
-          <div class="tag">
-            <h2>Foxmula Pvt. Ltd.</h2>
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Get in <span>Touch</span></h2>
+        
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right" data-aos-delay="300">
+                <h3>Let's connect</h3>
+                <p>Feel free to reach out for collaborations, job opportunities, or just a tech chat!</p>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h4>Location</h4>
+                        <p>Jaipur, Rajasthan, India - 302012</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                      <h4>Email</h4>
+                      <p class="contact-cta">gityash2024@gmail.com</p>
+                  </div>
+              </div>
+              
+              <div class="info-item">
+                  <div class="info-icon">
+                      <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div class="info-content">
+                      <h4>Phone</h4>
+                      <p class="contact-cta">+91 6377966657</p>
+                  </div>
+              </div>
+              
+              <div class="social-links">
+                  <a href="https://www.linkedin.com/in/yash-jangid-397420166/" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://github.com/gityash2024" target="_blank">
+                      <i class="fab fa-github"></i>
+                  </a>
+                  <a href="mailto:gityash2024@gmail.com">
+                      <i class="fas fa-envelope"></i>
+                  </a>
+                  <a href="https://www.instagram.com/kashapyash/" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+              </div>
           </div>
-          <div class="desc">
-              <h3>Front-End Developer | Internship</h3>
-              <p>May 2021 - July 2021</p>
-          </div>
-        </div>
+          
+          <div class="contact-form" data-aos="fade-left" data-aos-delay="300">
+              <form id="contact-form">
+                  <div class="form-group">
+                      <input type="text" name="name" id="name" placeholder="Your Name" required>
+                      <i class="fas fa-user"></i>
+                  </div>
+                  
+                  <div class="form-group">
+                      <input type="email" name="email" id="email" placeholder="Your Email" required>
+                      <i class="fas fa-envelope"></i>
+                  </div>
+                  
+                  <div class="form-group">
+                      <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                      <i class="fas fa-heading"></i>
       </div>
 
-      <div class="container left">
-        <div class="content">
-          <div class="tag">
-            <h2>ITH Technologies Pvt. Ltd.</h2>
-          </div>
-          <div class="desc">
-              <h3>Full Stack Developer | Associate Software Developer</h3>
-              <p>Jan 2022 - Present</p>
-          </div>
-        </div>
+                  <div class="form-group">
+                      <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                      <i class="fas fa-comment-alt"></i>
       </div>
 
+                  <button type="submit" class="btn primary-btn">
+                      <span>Send Message</span>
+                      <i class="fas fa-paper-plane"></i>
+                  </button>
+              </form>
+          </div>
+      </div>
   </div>
 
-  <!-- <div class="morebtn"> -->
-    <!-- <a href="./experience/index.html" class="btn"><span>View All</span> -->
-      <!-- <i class="fas fa-arrow-right"></i> -->
-  <!-- </a> -->
-  <!-- </div> -->
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+</section>
 
+<footer class="footer">
+  <div class="container">
+      <div class="footer-content">
+          <div class="footer-logo">
+              <a href="/">
+                  <i class="fab fa-node-js"></i>
+                  <span>Yash Jangid</span>
+              </a>
+              <p>Full Stack Developer specializing in MERN/MEAN stack, Web3 and blockchain technologies.</p>
+          </div>
+          
+          <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                  <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                  <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                  <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                  <li><a href="#experience"><i class="fas fa-chevron-right"></i> Experience</a></li>
+                  <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+              </ul>
+          </div>
+          
+          <div class="footer-contact">
+              <h3>Contact Info</h3>
+              <p><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan, India - 302012</p>
+              <p class="contact-cta"><i class="fas fa-phone-alt"></i> +91 6377966657</p>
+              <p class="contact-cta"><i class="fas fa-envelope"></i> gityash2024@gmail.com</p>
+              
+              <div class="social-links">
+                  <a href="https://www.linkedin.com/in/yash-jangid-397420166/" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://github.com/gityash2024" target="_blank">
+                      <i class="fab fa-github"></i>
+                  </a>
+                  <a href="mailto:gityash2024@gmail.com">
+                      <i class="fas fa-envelope"></i>
+                  </a>
+                  <a href="https://www.instagram.com/kashapyash/" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="footer-bottom">
+          <p>&copy; 2025 <span>Yash Jangid</span> | All Rights Reserved</p>
+      </div>
+  </div>
+</footer>
+
+<div id="scroll-top">
+  <i class="fas fa-arrow-up"></i>
 </div>
 
-</section>
-<!-- experience section ends -->
-
-<!-- contact section starts -->
-<section class="contact" id="contact">
-  
-  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-
-  <div class="container">
-    <div class="content">
-      <div class="image-box">
-        <img draggable="false" src="./assets/images/contact1.png" alt="">
-      </div>
-    <form id="contact-form">
-      
-      <div class="form-group">
-        <div class="field">
-          <input type="text" name="name" placeholder="Name" required>
-          <i class='fas fa-user'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Email" required>
-          <i class='fas fa-envelope'></i>
-        </div>
-        <div class="field">
-          <input type="text" name="phone" placeholder="Phone">
-          <i class='fas fa-phone-alt'></i>
-        </div>
-        <div class="message">
-        <textarea placeholder="Message" name="message" required></textarea>
-        <i class="fas fa-comment-dots"></i>
-        </div>
-        </div>
-      <div class="button-area">
-        <button type="submit">
-          Submit <i class="fa fa-paper-plane"></i></button>
-      </div>
-    </form>
-  </div>
-  </div>
-</section>
-<!-- contact section ends -->
-
-
-<!-- footer section starts -->
-<section class="footer">
-
-  <div class="box-container">
-
-      <div class="box">
-          <h3>Yash's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over chat!</p>
-      </div>
-
-      <div class="box">
-          <h3>quick links</h3>
-          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
-      </div>
-
-      <div class="box">
-          <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+91-6377966657</p>
-          <p> <i class="fas fa-envelope"></i>yashjangid091099@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Jaipur (Raj), India-302012</p>
-          <div class="share">
-            <a href="https://www.linkedin.com/in/yash-jangid-397420166/" class="fab fa-linkedin" target="_blank"></a>
-            <a href="https://github.com/yash500071155" class="fab fa-github" target="_blank"></a>
-            <a href="https://www.instagram.com/kashapyash/" class="fab fa-instagram" target="_blank"></a>
-            <a href="mailto:yashjangid091099@gmail.com" class="fas fa-envelope" target="_blank"></a>
-          </div>
-      </div>
-  </div>
-  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/yash-jangid-397420166/" target="_blank"> Yash Jangid</a></h1>
-
-</section>
-<!-- footer section ends -->
-
-
-<!-- scroll top btn -->
-<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
-
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- typed.js cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- particle.js links -->
-<script src="./assets/js/particles.min.js"></script>
-<script src="./assets/js/app.js"></script>
-
-<!-- vanilla tilt.js links -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="./assets/js/script.js"></script>
+<div class="project-modal" id="project-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 id="modal-title">Project Demo</h3>
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="modal-loader">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>
+        <iframe id="modal-iframe" class="modal-iframe" src="about:blank" title="Project Demo"></iframe>
+    </div>
+</div>
 
+<div class="exit-modal" id="exit-modal">
+    <div class="exit-content">
+        <div class="exit-illustration">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="80" fill="var(--shape-color-1)" />
+                <path fill="var(--primary-color)" d="M100,40 C120,40 140,50 150,70 C160,90 160,110 150,130 C140,150 120,160 100,160 C80,160 60,150 50,130 C40,110 40,90 50,70 C60,50 80,40 100,40 Z" opacity="0.3" />
+                <path fill="none" stroke="var(--primary-color)" stroke-width="5" stroke-linecap="round" d="M70,80 L130,120 M130,80 L70,120" />
+                <path fill="none" stroke="var(--primary-color)" stroke-width="5" stroke-linecap="round" d="M100,40 C120,40 140,50 150,70 C160,90 160,110 150,130 C140,150 120,160 100,160 C80,160 60,150 50,130 C40,110 40,90 50,70 C60,50 80,40 100,40 Z" />
+            </svg>
+        </div>
+        <h2 class="exit-title">Wait! Don't Leave Yet</h2>
+        <p class="exit-message">Are you sure you want to leave? There's still so much more to explore in my portfolio!</p>
+        <div class="exit-buttons">
+            <button id="stay-btn" class="btn primary-btn exit-btn">
+                <span>Stay Here</span>
+            </button>
+            <button id="leave-btn" class="btn secondary-btn exit-btn">
+                <span>Leave</span>
+            </button>
+        </div>
+    </div>
+</div>
 </body>
 </html>
