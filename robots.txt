@@ -1,0 +1,10 @@
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yashjangid.com/sitemap.xml
+
+# Disallow these directories if they contain non-public information
+# Disallow: /private/
+# Disallow: /admin/ 
