@@ -1388,3 +1388,14 @@
 [data-aos-delay="900"] {
   transition-delay: 0.9s !important;
 }
+
+@media (max-width: 768px) {
+  .projects .projects-container {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+  
+  .project-card {
+    max-width: 100%;
+  }
+}
