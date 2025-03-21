@@ -37,7 +37,7 @@ window.addEventListener('load', () => {
         progressText.textContent = 'Initializing components...';
       } else if (progress < 75) {
         progressText.textContent = 'Fetching projects...';
-      } else {
+        } else {
         progressText.textContent = 'Almost ready...';
       }
     }
@@ -131,7 +131,7 @@ const typed = new Typed('.typing-text', {
   typeSpeed: 80,
   backSpeed: 40,
   backDelay: 1500,
-  loop: true,
+    loop: true,
 });
 
 particlesJS('particles-js', {
@@ -566,21 +566,21 @@ if (leaveBtn) {
 }
 
 document.onkeydown = function (e) {
-  if (e.keyCode == 123) {
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-    return false;
-  }
-  if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-    return false;
-  }
+    if (e.keyCode == 123) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
+    }
 }
 
 $(document).ready(function () {

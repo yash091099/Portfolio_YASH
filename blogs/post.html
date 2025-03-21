@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Blog Post | Yash Jangid</title>
+    <meta name="title" content="Blog Post | Yash Jangid">
+    <meta name="description" content="Explore tech insights and expertise by Yash Jangid.">
+    <meta name="keywords" content="tech blog, mern stack, web3, blockchain, javascript, react, node.js, developer blog, full stack development, yash jangid">
+    <meta name="author" content="Yash Jangid">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <link rel="canonical" href="https://yashjangid.com/blogs/post.html">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yashjangid.com/blogs/post.html">
+    <meta property="og:title" content="Blog Post | Yash Jangid">
+    <meta property="og:description" content="Explore tech insights and expertise by Yash Jangid.">
+    <meta property="og:image" content="https://source.unsplash.com/random/1200x630/?technology">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yashjangid.com/blogs/post.html">
+    <meta property="twitter:title" content="Blog Post | Yash Jangid">
+    <meta property="twitter:description" content="Explore tech insights and expertise by Yash Jangid.">
+    <meta property="twitter:image" content="https://source.unsplash.com/random/1200x630/?technology">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/modern-theme.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+
+<header>
+    <div class="container navbar-container">
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> Yash Jangid</a>
+
+        <div id="theme-toggle" class="theme-toggle">
+            <i id="theme-icon" class="fas fa-moon"></i>
+        </div>
+
+        <div id="menu-btn" class="menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="/#home">Home</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#skills">Skills</a></li>
+                <li><a href="/#education">Education</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#experience">Experience</a></li>
+                <li><a class="active" href="/blogs/">Blogs</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="blog-detail">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="blog-detail-content" data-aos="fade-up" id="blog-content">
+                    <!-- Blog content will be loaded here dynamically -->
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading post...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="sidebar" data-aos="fade-left" data-aos-delay="300">
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">Popular Tags</h3>
+                        <div class="sidebar-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Web3</span>
+                            <span class="tag">Blockchain</span>
+                            <span class="tag">Frontend</span>
+                            <span class="tag">Backend</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-section sidebar-recent" id="recent-posts">
+                        <h3 class="sidebar-title">Recent Posts</h3>
+                        <!-- Recent posts will be loaded here dynamically -->
+                        <div class="loading-spinner">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter">
+    <div class="container">
+        <div class="newsletter-container" data-aos="fade-up">
+            <div class="newsletter-content">
+                <h2>Subscribe to My Newsletter</h2>
+                <p>Get notified when I publish new articles and tech insights. No spam, just valuable content.</p>
+            </div>
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                    <button type="submit" class="btn primary-btn">
+                        <span>Subscribe</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="/">
+                    <i class="fab fa-node-js"></i>
+                    <span>Yash Jangid</span>
+                </a>
+                <p>Full Stack Developer specializing in MERN/MEAN stack, Web3 and blockchain technologies.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="/#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                    <li><a href="/#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                    <li><a href="/#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                    <li><a href="/#experience"><i class="fas fa-chevron-right"></i> Experience</a></li>
+                    <li><a href="/blogs/"><i class="fas fa-chevron-right"></i> Blogs</a></li>
+                    <li><a href="/#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan, India - 302012</p>
+                <p><i class="fas fa-phone-alt"></i> +91 6377966657</p>
+                <p><i class="fas fa-envelope"></i> gityash2024@gmail.com</p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/yash-jangid-397420166/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/gityash2024" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:gityash2024@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kashapyash/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 <span>Yash Jangid</span> | All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+<div id="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+<div class="voice-control">
+    <i class="fas fa-volume-up"></i>
+</div>
+
+<div class="toast" id="toast-notification">
+    <i class="fas fa-check-circle"></i>
+    <span>Notification message here</span>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+// Initialize AOS
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+    });
+});
+</script>
+<script src="./assets/js/blog.js"></script>
+<script src="../assets/js/exit-handler.js"></script>
+
+<script>
+// Blog data for all posts
+const blogPosts = [
+    {
+        id: 1,
+        title: "Building Scalable React Applications: Architecture Patterns and Best Practices",
+        date: "March 15, 2024",
+        readTime: "8 min read",
+        tags: ["React", "JavaScript", "Frontend"],
+        image: "react",
+        excerpt: "Learn how to structure your React applications for scalability, maintainability, and performance. Explore component patterns, state management strategies, and code organization techniques.",
+        content: `
+            <div class="blog-banner">
+                <img src="../assets/images/1.png" alt="Building Scalable React Applications">
+            </div>
+            
+            <div class="blog-detail-info">
+                <div class="post-meta">
+                    <span class="post-date"><i class="far fa-calendar-alt"></i> March 15, 2024</span>
+                    <span class="post-read-time"><i class="far fa-clock"></i> 8 min read</span>
+                </div>
+                
+                <h1 class="post-title">Building Scalable React Applications: Architecture Patterns and Best Practices</h1>
+                
+                <div class="post-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Frontend</span>
+                </div>
+                
+                <div class="blog-author" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-author-img">
+                        <img src="../assets/images/profile2.jpg" alt="Yash Jangid">
+                    </div>
+                    <div class="blog-author-info">
+                        <h4>Yash Jangid</h4>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-content" data-aos="fade-up" data-aos-delay="200">
+                <p>As React applications grow in size and complexity, maintaining a clean and efficient codebase becomes increasingly challenging. Without a well-thought-out architecture, even the most promising projects can quickly turn into unmaintainable messes of tangled code and unexpected behaviors.</p>
+                
+                <p>In this comprehensive guide, we'll explore proven architecture patterns and best practices for building scalable React applications that can grow with your needs while remaining maintainable, performant, and developer-friendly.</p>
+                
+                <h2>Component Architecture Patterns</h2>
+                
+                <p>The foundation of any well-structured React application is a thoughtful component architecture. Let's explore some of the most useful patterns:</p>
+                
+                <h3>1. Atomic Design Methodology</h3>
+                
+                <p>Inspired by Brad Frost's methodology, Atomic Design breaks UI components into five distinct levels:</p>
+                
+                <ul>
+                    <li><strong>Atoms:</strong> Basic building blocks like buttons, inputs, and labels.</li>
+                    <li><strong>Molecules:</strong> Simple groups of UI elements functioning together (e.g., search form).</li>
+                    <li><strong>Organisms:</strong> Relatively complex components composed of molecules and atoms (e.g., header).</li>
+                    <li><strong>Templates:</strong> Page-level objects placing components within a layout.</li>
+                    <li><strong>Pages:</strong> Specific instances of templates with real content.</li>
+                </ul>
+                
+                <p>This hierarchical approach promotes reusability and makes it easier to reason about your component structure:</p>
+                
+                <pre><code>
+src/
+  components/
+    atoms/
+      Button.jsx
+      Input.jsx
+      Label.jsx
+    molecules/
+      SearchForm.jsx
+      FormField.jsx
+    organisms/
+      Header.jsx
+      Footer.jsx
+    templates/
+      HomeTemplate.jsx
+      BlogTemplate.jsx
+  pages/
+    HomePage.jsx
+    BlogPage.jsx
+                </code></pre>
+                
+                <h3>2. Component Composition</h3>
+                
+                <p>React's composition model is powerful but often underutilized. Instead of creating complex inheritance hierarchies, aim for small, focused components that can be composed together:</p>
+                
+                <pre><code>
+// Instead of a monolithic component
+function UserProfile({ user, onEdit, onDelete }) {
+  // Lots of complex logic and UI
+}
+
+// Prefer composition
+function UserProfile({ user }) {
+  return (
+    <Card>
+      <UserAvatar src={user.avatar} />
+      <UserInfo user={user} />
+      <UserActions user={user} />
+    </Card>
+  );
+}
+
+function UserActions({ user }) {
+  return (
+    <div className="actions">
+      <EditButton userId={user.id} />
+      <DeleteButton userId={user.id} />
+    </div>
+  );
+}
+                </code></pre>
+                
+                <h3>3. Container and Presentational Pattern</h3>
+                
+                <p>While hooks have made this pattern less essential, the conceptual separation of concerns remains valuable:</p>
+                
+                <ul>
+                    <li><strong>Containers:</strong> Handle data fetching, state management, and logic.</li>
+                    <li><strong>Presentational components:</strong> Focus on rendering UI based on props.</li>
+                </ul>
+                
+                <p>By following these patterns and best practices, you can create React applications that remain maintainable and performant as they grow in complexity.</p>
+                
+                <div class="blog-nav">
+                    <a href="./post.html?id=2" class="blog-nav-prev"><i class="fas fa-arrow-left"></i> Node.js Microservices: Design Patterns</a>
+                    <a href="./post.html?id=3" class="blog-nav-next">Getting Started with Web3 Development <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="blog-comments" data-aos="fade-up" data-aos-delay="300">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <textarea placeholder="Share your thoughts..."></textarea>
+                    <button type="submit" class="btn primary-btn">Submit Comment</button>
+                </form>
+            </div>
+        `
+    },
+    {
+        id: 2,
+        title: "Node.js Microservices: Design Patterns and Implementation Strategies",
+        date: "March 10, 2024",
+        readTime: "10 min read",
+        tags: ["Node.js", "Backend", "JavaScript"],
+        image: "nodejs",
+        excerpt: "Discover how to design, build, and deploy microservices using Node.js. Learn about communication patterns, database strategies, and deployment considerations.",
+        content: `
+            <div class="blog-banner">
+                <img src="../assets/images/2.png" alt="Node.js Microservices">
+            </div>
+            
+            <div class="blog-detail-info">
+                <div class="post-meta">
+                    <span class="post-date"><i class="far fa-calendar-alt"></i> March 10, 2024</span>
+                    <span class="post-read-time"><i class="far fa-clock"></i> 10 min read</span>
+                </div>
+                
+                <h1 class="post-title">Node.js Microservices: Design Patterns and Implementation Strategies</h1>
+                
+                <div class="post-tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Backend</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                
+                <div class="blog-author" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-author-img">
+                        <img src="../assets/images/profile2.jpg" alt="Yash Jangid">
+                    </div>
+                    <div class="blog-author-info">
+                        <h4>Yash Jangid</h4>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-content" data-aos="fade-up" data-aos-delay="200">
+                <p>Microservices architecture has revolutionized how we build and scale applications, allowing teams to develop, deploy, and scale components independently. Node.js, with its lightweight and high-performance characteristics, is an excellent choice for building microservices.</p>
+                
+                <p>In this article, we'll explore proven design patterns and implementation strategies for building robust Node.js microservices.</p>
+                
+                <h2>Core Microservices Patterns</h2>
+                
+                <h3>1. Service Decomposition Patterns</h3>
+                
+                <p>The first challenge in microservices is determining how to break down your application:</p>
+                
+                <ul>
+                    <li><strong>Decompose by Business Capability:</strong> Organize services around business capabilities (e.g., order management, user profiles, inventory).</li>
+                    <li><strong>Decompose by Subdomain:</strong> Follow Domain-Driven Design (DDD) principles to identify bounded contexts and subdomains.</li>
+                </ul>
+                
+                <h3>2. Database Patterns</h3>
+                
+                <p>Each microservice should own its data, which leads to several database patterns:</p>
+                
+                <ul>
+                    <li><strong>Database per Service:</strong> Each service has its own database, ensuring loose coupling.</li>
+                    <li><strong>Shared Database:</strong> Multiple services share a database (generally not recommended but sometimes necessary).</li>
+                    <li><strong>Command Query Responsibility Segregation (CQRS):</strong> Separate read and write operations, often using different data models.</li>
+                    <li><strong>Event Sourcing:</strong> Store changes to application state as a sequence of events.</li>
+                </ul>
+                
+                <p>This article provides a comprehensive overview of building microservices with Node.js, covering essential patterns and practical implementation strategies.</p>
+                
+                <div class="blog-nav">
+                    <a href="./post.html?id=1" class="blog-nav-prev"><i class="fas fa-arrow-left"></i> Building Scalable React Applications</a>
+                    <a href="./post.html?id=3" class="blog-nav-next">Getting Started with Web3 Development <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="blog-comments" data-aos="fade-up" data-aos-delay="300">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <textarea placeholder="Share your thoughts..."></textarea>
+                    <button type="submit" class="btn primary-btn">Submit Comment</button>
+                </form>
+            </div>
+        `
+    },
+    {
+        id: 3,
+        title: "Getting Started with Web3 Development: Building Your First dApp",
+        date: "March 5, 2024",
+        readTime: "12 min read",
+        tags: ["Web3", "Blockchain", "JavaScript"],
+        image: "blockchain",
+        excerpt: "Learn the fundamentals of Web3 development and how to build decentralized applications (dApps). Explore interactions with smart contracts, blockchain integration, and user authentication.",
+        content: `
+            <div class="blog-banner">
+                <img src="../assets/images/3.png" alt="Web3 Development">
+            </div>
+            
+            <div class="blog-detail-info">
+                <div class="post-meta">
+                    <span class="post-date"><i class="far fa-calendar-alt"></i> March 5, 2024</span>
+                    <span class="post-read-time"><i class="far fa-clock"></i> 12 min read</span>
+                </div>
+                
+                <h1 class="post-title">Getting Started with Web3 Development: Building Your First dApp</h1>
+                
+                <div class="post-tags">
+                    <span class="tag">Web3</span>
+                    <span class="tag">Blockchain</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                
+                <div class="blog-author" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-author-img">
+                        <img src="../assets/images/profile2.jpg" alt="Yash Jangid">
+                    </div>
+                    <div class="blog-author-info">
+                        <h4>Yash Jangid</h4>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-content" data-aos="fade-up" data-aos-delay="200">
+                <p>Web3 represents the next evolution of the internet, moving from centralized platforms to decentralized protocols built on blockchain technology. As a developer, entering the Web3 space opens up exciting opportunities to build transparent, trustless, and user-controlled applications.</p>
+                
+                <p>This comprehensive guide will walk you through the fundamentals of Web3 development and help you build your first decentralized application (dApp).</p>
+                
+                <h2>Understanding Web3 Fundamentals</h2>
+                
+                <h3>1. Web1 vs. Web2 vs. Web3</h3>
+                
+                <ul>
+                    <li><strong>Web1 (Read-Only):</strong> Static websites where users consume content.</li>
+                    <li><strong>Web2 (Read-Write):</strong> Interactive platforms controlled by centralized companies (social media, cloud services).</li>
+                    <li><strong>Web3 (Read-Write-Own):</strong> Decentralized applications where users control their data and digital assets through blockchain technology.</li>
+                </ul>
+                
+                <h3>2. Key Web3 Components</h3>
+                
+                <ul>
+                    <li><strong>Blockchain:</strong> Distributed ledger providing trust and immutability.</li>
+                    <li><strong>Smart Contracts:</strong> Self-executing code deployed on the blockchain.</li>
+                    <li><strong>Wallets:</strong> Software allowing users to interact with blockchains and manage digital assets.</li>
+                    <li><strong>Tokens:</strong> Digital assets representing value, utility, or ownership.</li>
+                </ul>
+                
+                <p>This guide provides a foundational understanding of Web3 development and helps you build your first decentralized application.</p>
+                
+                <div class="blog-nav">
+                    <a href="./post.html?id=2" class="blog-nav-prev"><i class="fas fa-arrow-left"></i> Node.js Microservices: Design Patterns</a>
+                    <a href="./post.html?id=4" class="blog-nav-next">Modern JavaScript Features Every Developer Should Know <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="blog-comments" data-aos="fade-up" data-aos-delay="300">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <textarea placeholder="Share your thoughts..."></textarea>
+                    <button type="submit" class="btn primary-btn">Submit Comment</button>
+                </form>
+            </div>
+        `
+    },
+    {
+        id: 4,
+        title: "Modern JavaScript Features Every Developer Should Know",
+        date: "February 28, 2024",
+        readTime: "7 min read",
+        tags: ["JavaScript", "Frontend"],
+        image: "javascript",
+        excerpt: "Discover the latest JavaScript features that can help you write more concise, readable, and maintainable code. Learn about ES6+ syntax, async/await, destructuring, and more.",
+        content: `
+            <div class="blog-banner">
+                <img src="../assets/images/4.png" alt="Modern JavaScript Features">
+            </div>
+            
+            <div class="blog-detail-info">
+                <div class="post-meta">
+                    <span class="post-date"><i class="far fa-calendar-alt"></i> February 28, 2024</span>
+                    <span class="post-read-time"><i class="far fa-clock"></i> 7 min read</span>
+                </div>
+                
+                <h1 class="post-title">Modern JavaScript Features Every Developer Should Know</h1>
+                
+                <div class="post-tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Frontend</span>
+                </div>
+                
+                <div class="blog-author" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-author-img">
+                        <img src="../assets/images/profile2.jpg" alt="Yash Jangid">
+                    </div>
+                    <div class="blog-author-info">
+                        <h4>Yash Jangid</h4>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-content" data-aos="fade-up" data-aos-delay="200">
+                <p>JavaScript has evolved dramatically in recent years, with ECMAScript 6 (ES6) and subsequent releases introducing powerful features that make code more concise, readable, and maintainable. Mastering these modern features is essential for any JavaScript developer working in today's ecosystem.</p>
+                
+                <p>In this guide, we'll explore the most important modern JavaScript features that every developer should know and use.</p>
+                
+                <h2>ES6+ Syntax Enhancements</h2>
+                
+                <h3>1. Arrow Functions</h3>
+                
+                <p>Arrow functions provide a concise syntax for writing function expressions:</p>
+                
+                <pre><code>
+// Traditional function
+function add(a, b) {
+  return a + b;
+}
+
+// Arrow function
+const add = (a, b) => a + b;
+
+// Multiline arrow function
+const multiply = (a, b) => {
+  const result = a * b;
+  return result;
+};
+                </code></pre>
+                
+                <p>Beyond their concise syntax, arrow functions don't have their own this, arguments, super, or new.target bindings, making them ideal for callback functions where you want to preserve the lexical scope.</p>
+                
+                <h3>2. Destructuring Assignment</h3>
+                
+                <p>Destructuring allows you to extract values from arrays or objects into distinct variables:</p>
+                
+                <pre><code>
+// Object destructuring
+const user = { name: 'John', age: 30, city: 'New York' };
+const { name, age } = user;
+console.log(name); // 'John'
+console.log(age);  // 30
+
+// Array destructuring
+const coordinates = [10, 20, 30];
+const [x, y, z] = coordinates;
+console.log(x); // 10
+console.log(y); // 20
+
+// Default values
+const { role = 'User' } = user;
+console.log(role); // 'User'
+
+// Renaming properties
+const { name: userName } = user;
+console.log(userName); // 'John'
+                </code></pre>
+                
+                <p>This article covers essential modern JavaScript features that every developer should know to write more efficient, readable, and maintainable code.</p>
+                
+                <div class="blog-nav">
+                    <a href="./post.html?id=3" class="blog-nav-prev"><i class="fas fa-arrow-left"></i> Getting Started with Web3 Development</a>
+                    <a href="./post.html?id=5" class="blog-nav-next">Blockchain Fundamentals <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="blog-comments" data-aos="fade-up" data-aos-delay="300">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <textarea placeholder="Share your thoughts..."></textarea>
+                    <button type="submit" class="btn primary-btn">Submit Comment</button>
+                </form>
+            </div>
+        `
+    },
+    {
+        id: 5,
+        title: "Blockchain Fundamentals: Understanding the Core Concepts",
+        date: "February 20, 2024",
+        readTime: "11 min read",
+        tags: ["Blockchain", "Web3"],
+        image: "cryptocurrency",
+        excerpt: "Explore the fundamental concepts behind blockchain technology. Learn about decentralization, consensus mechanisms, cryptographic hashing, and smart contracts.",
+        content: `
+            <div class="blog-banner">
+                <img src="../assets/images/5.png" alt="Blockchain Fundamentals">
+            </div>
+            
+            <div class="blog-detail-info">
+                <div class="post-meta">
+                    <span class="post-date"><i class="far fa-calendar-alt"></i> February 20, 2024</span>
+                    <span class="post-read-time"><i class="far fa-clock"></i> 11 min read</span>
+                </div>
+                
+                <h1 class="post-title">Blockchain Fundamentals: Understanding the Core Concepts</h1>
+                
+                <div class="post-tags">
+                    <span class="tag">Blockchain</span>
+                    <span class="tag">Web3</span>
+                </div>
+                
+                <div class="blog-author" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-author-img">
+                        <img src="../assets/images/profile2.jpg" alt="Yash Jangid">
+                    </div>
+                    <div class="blog-author-info">
+                        <h4>Yash Jangid</h4>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-content" data-aos="fade-up" data-aos-delay="200">
+                <p>Blockchain technology has emerged as one of the most transformative innovations of our time, with applications extending far beyond its cryptocurrency origins. Understanding blockchain fundamentals is becoming increasingly important for developers, business professionals, and anyone interested in the future of digital transactions.</p>
+                
+                <p>In this comprehensive guide, we'll explore the core concepts of blockchain technology, demystifying its inner workings and revealing why it's such a powerful paradigm shift.</p>
+                
+                <h2>What Is Blockchain?</h2>
+                
+                <p>At its simplest, a blockchain is a distributed, immutable ledger that records transactions across many computers. Unlike traditional databases controlled by a central authority, blockchain is decentralized, with data distributed across a network of computers (nodes).</p>
+                
+                <p>Key characteristics include:</p>
+                
+                <ul>
+                    <li><strong>Distributed:</strong> The ledger exists across multiple nodes, each with an identical copy.</li>
+                    <li><strong>Immutable:</strong> Once recorded, data in a block cannot be altered retroactively without altering all subsequent blocks.</li>
+                    <li><strong>Transparent:</strong> All transactions are visible to anyone with access to the network.</li>
+                    <li><strong>Secure:</strong> Cryptographic techniques ensure data integrity and security.</li>
+                </ul>
+                
+                <h2>Blockchain Architecture</h2>
+                
+                <h3>1. Blocks</h3>
+                
+                <p>Blockchains consist of a series of blocks, each containing:</p>
+                
+                <ul>
+                    <li><strong>Data:</strong> The information being stored (e.g., transaction details).</li>
+                    <li><strong>Hash:</strong> A unique identifier generated from the block's contents.</li>
+                    <li><strong>Previous Hash:</strong> The hash of the preceding block, creating the "chain".</li>
+                    <li><strong>Timestamp:</strong> When the block was created.</li>
+                    <li><strong>Nonce:</strong> A number used in the mining process (Proof of Work).</li>
+                </ul>
+                
+                <p>This article provides a comprehensive introduction to blockchain technology, covering the fundamental concepts that form the foundation of this revolutionary technology.</p>
+                
+                <div class="blog-nav">
+                    <a href="./post.html?id=4" class="blog-nav-prev"><i class="fas fa-arrow-left"></i> Modern JavaScript Features</a>
+                    <a href="./post.html?id=6" class="blog-nav-next">Building a CI/CD Pipeline <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="blog-comments" data-aos="fade-up" data-aos-delay="300">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <textarea placeholder="Share your thoughts..."></textarea>
+                    <button type="submit" class="btn primary-btn">Submit Comment</button>
+                </form>
+            </div>
+        `
+    },
+    {
+        id: 6,
+        title: "Building a CI/CD Pipeline for Modern Web Applications",
+        date: "February 15, 2024",
+        readTime: "9 min read",
+        tags: ["DevOps", "Backend"],
+        image: "server",
+        excerpt: "Learn how to set up a robust continuous integration and continuous deployment pipeline for your web applications using GitHub Actions, Docker, and cloud platforms.",
+        content: `
+            <div class="blog-banner">
+                <img src="../assets/images/6.png" alt="CI/CD Pipeline">
+            </div>
+            
+            <div class="blog-detail-info">
+                <div class="post-meta">
+                    <span class="post-date"><i class="far fa-calendar-alt"></i> February 15, 2024</span>
+                    <span class="post-read-time"><i class="far fa-clock"></i> 9 min read</span>
+                </div>
+                
+                <h1 class="post-title">Building a CI/CD Pipeline for Modern Web Applications</h1>
+                
+                <div class="post-tags">
+                    <span class="tag">DevOps</span>
+                    <span class="tag">Backend</span>
+                </div>
+                
+                <div class="blog-author" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-author-img">
+                        <img src="../assets/images/profile2.jpg" alt="Yash Jangid">
+                    </div>
+                    <div class="blog-author-info">
+                        <h4>Yash Jangid</h4>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-content" data-aos="fade-up" data-aos-delay="200">
+                <p>Continuous Integration and Continuous Deployment (CI/CD) have become essential practices for modern web development. By automating the build, test, and deployment processes, CI/CD pipelines help teams deliver high-quality software more frequently and reliably.</p>
+                
+                <p>In this comprehensive guide, we'll explore how to build a robust CI/CD pipeline for modern web applications using GitHub Actions, Docker, and cloud platforms.</p>
+                
+                <h2>Understanding CI/CD</h2>
+                
+                <h3>1. Continuous Integration (CI)</h3>
+                
+                <p>Continuous Integration is the practice of automatically integrating code changes from multiple contributors into a shared repository, followed by automated builds and tests. The main goals are:</p>
+                
+                <ul>
+                    <li>Detecting integration issues early</li>
+                    <li>Validating code correctness through automated testing</li>
+                    <li>Ensuring code quality through static analysis</li>
+                    <li>Building artifacts consistently</li>
+                </ul>
+                
+                <h3>2. Continuous Deployment (CD)</h3>
+                
+                <p>Continuous Deployment takes CI one step further by automatically deploying every change that passes all tests to production. The main goals are:</p>
+                
+                <ul>
+                    <li>Reducing time-to-market for new features</li>
+                    <li>Making deployments predictable and routine</li>
+                    <li>Automating the release process</li>
+                    <li>Enabling rapid feedback from users</li>
+                </ul>
+                
+                <p>This guide provides a comprehensive approach to building an effective CI/CD pipeline for modern web applications, helping you automate your development workflow.</p>
+                
+                <div class="blog-nav">
+                    <a href="./post.html?id=5" class="blog-nav-prev"><i class="fas fa-arrow-left"></i> Blockchain Fundamentals</a>
+                    <a href="./post.html?id=7" class="blog-nav-next">React Performance Optimization Techniques <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="blog-comments" data-aos="fade-up" data-aos-delay="300">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <textarea placeholder="Share your thoughts..."></textarea>
+                    <button type="submit" class="btn primary-btn">Submit Comment</button>
+                </form>
+            </div>
+        `
+    },
+    {
+        id: 7,
+        title: "React Performance Optimization Techniques",
+        date: "February 10, 2024",
+        readTime: "8 min read",
+        tags: ["React", "Frontend"],
+        image: "programming",
+        excerpt: "Discover strategies for improving the performance of your React applications. Learn about memoization, code splitting, virtualization, and state management optimizations.",
+        content: `
+            <div class="blog-banner">
+                <img src="../assets/images/7.png" alt="React Performance Optimization">
+            </div>
+            
+            <div class="blog-detail-info">
+                <div class="post-meta">
+                    <span class="post-date"><i class="far fa-calendar-alt"></i> February 10, 2024</span>
+                    <span class="post-read-time"><i class="far fa-clock"></i> 8 min read</span>
+                </div>
+                
+                <h1 class="post-title">React Performance Optimization Techniques</h1>
+                
+                <div class="post-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Frontend</span>
+                </div>
+                
+                <div class="blog-author" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-author-img">
+                        <img src="../assets/images/profile2.jpg" alt="Yash Jangid">
+                    </div>
+                    <div class="blog-author-info">
+                        <h4>Yash Jangid</h4>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-content" data-aos="fade-up" data-aos-delay="200">
+                <p>As React applications grow in complexity, performance optimization becomes increasingly important. A slow, unresponsive UI can significantly impact user experience and, consequently, the success of your application.</p>
+                
+                <p>In this comprehensive guide, we'll explore proven techniques for optimizing React application performance, from component rendering optimizations to efficient state management.</p>
+                
+                <h2>Understanding React Performance</h2>
+                
+                <p>Before diving into optimization techniques, it's essential to understand how React renders components and what can cause performance issues:</p>
+                
+                <ul>
+                    <li>React uses a virtual DOM to minimize costly DOM operations</li>
+                    <li>Components re-render when props or state change</li>
+                    <li>Parent component updates trigger re-renders in all child components</li>
+                    <li>Expensive calculations and unnecessary re-renders are common performance bottlenecks</li>
+                </ul>
+                
+                <h2>Component Optimization Techniques</h2>
+                
+                <h3>1. Memoization with React.memo</h3>
+                
+                <p>React.memo is a higher-order component that memoizes a component, preventing unnecessary re-renders if the props haven't changed:</p>
+                
+                <pre><code>
+import React from 'react';
+
+const ExpensiveComponent = ({ value }) => {
+  console.log('Rendering ExpensiveComponent');
+  // Expensive rendering logic
+  return <div>{value}</div>;
+};
+
+// Memoized version
+export default React.memo(ExpensiveComponent);
+                </code></pre>
+                
+                <p>This guide explores various techniques for optimizing React application performance, helping you build faster, more responsive web applications.</p>
+                
+                <div class="blog-nav">
+                    <a href="./post.html?id=6" class="blog-nav-prev"><i class="fas fa-arrow-left"></i> Building a CI/CD Pipeline</a>
+                    <a href="./post.html?id=8" class="blog-nav-next">Node.js Security Best Practices <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="blog-comments" data-aos="fade-up" data-aos-delay="300">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <textarea placeholder="Share your thoughts..."></textarea>
+                    <button type="submit" class="btn primary-btn">Submit Comment</button>
+                </form>
+            </div>
+        `
+    },
+    {
+        id: 8,
+        title: "Node.js Security Best Practices for Production Applications",
+        date: "February 5, 2024",
+        readTime: "10 min read",
+        tags: ["Node.js", "Backend"],
+        image: "security",
+        excerpt: "Learn essential security practices for deploying Node.js applications to production. Explore common vulnerabilities, authentication strategies, and security tools.",
+        content: `
+            <div class="blog-banner">
+                <img src="../assets/images/8.png" alt="Node.js Security">
+            </div>
+            
+            <div class="blog-detail-info">
+                <div class="post-meta">
+                    <span class="post-date"><i class="far fa-calendar-alt"></i> February 5, 2024</span>
+                    <span class="post-read-time"><i class="far fa-clock"></i> 10 min read</span>
+                </div>
+                
+                <h1 class="post-title">Node.js Security Best Practices for Production Applications</h1>
+                
+                <div class="post-tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Backend</span>
+                </div>
+                
+                <div class="blog-author" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-author-img">
+                        <img src="../assets/images/profile2.jpg" alt="Yash Jangid">
+                    </div>
+                    <div class="blog-author-info">
+                        <h4>Yash Jangid</h4>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-content" data-aos="fade-up" data-aos-delay="200">
+                <p>Security is a critical aspect of any production application, and Node.js applications are no exception. With the growing adoption of Node.js for building backend services, ensuring your applications are secure from common vulnerabilities is essential.</p>
+                
+                <p>This comprehensive guide explores essential security best practices for Node.js applications, helping you protect your services from common attacks and vulnerabilities.</p>
+                
+                <h2>Understanding Node.js Security Challenges</h2>
+                
+                <p>Node.js applications face various security challenges, including:</p>
+                
+                <ul>
+                    <li>Injection attacks (SQL, NoSQL, Command)</li>
+                    <li>Cross-Site Scripting (XSS)</li>
+                    <li>Cross-Site Request Forgery (CSRF)</li>
+                    <li>Broken Authentication and Session Management</li>
+                    <li>Security Misconfigurations</li>
+                    <li>Sensitive Data Exposure</li>
+                    <li>Dependency Vulnerabilities</li>
+                </ul>
+                
+                <h2>Essential Security Best Practices</h2>
+                
+                <h3>1. Keep Dependencies Updated</h3>
+                
+                <p>Outdated dependencies can contain security vulnerabilities. Regularly update your packages and use tools to check for security issues:</p>
+                
+                <pre><code>
+# Update packages
+npm update
+
+# Check for vulnerabilities
+npm audit
+
+# Fix vulnerabilities
+npm audit fix
+                </code></pre>
+                
+                <p>This guide covers essential security practices for Node.js applications, helping you protect your services and data from common vulnerabilities and attacks.</p>
+                
+                <div class="blog-nav">
+                    <a href="./post.html?id=7" class="blog-nav-prev"><i class="fas fa-arrow-left"></i> React Performance Optimization</a>
+                    <a href="./post.html?id=9" class="blog-nav-next">Smart Contract Development and Security <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="blog-comments" data-aos="fade-up" data-aos-delay="300">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <textarea placeholder="Share your thoughts..."></textarea>
+                    <button type="submit" class="btn primary-btn">Submit Comment</button>
+                </form>
+            </div>
+        `
+    },
+    {
+        id: 9,
+        title: "Smart Contract Development and Security: Best Practices",
+        date: "January 30, 2024",
+        readTime: "13 min read",
+        tags: ["Web3", "Blockchain"],
+        image: "code",
+        excerpt: "Learn how to write secure and efficient smart contracts for blockchain applications. Explore common vulnerabilities, testing strategies, and auditing processes.",
+        content: `
+            <div class="blog-banner">
+                <img src="../assets/images/9.png" alt="Smart Contract Development">
+            </div>
+            
+            <div class="blog-detail-info">
+                <div class="post-meta">
+                    <span class="post-date"><i class="far fa-calendar-alt"></i> January 30, 2024</span>
+                    <span class="post-read-time"><i class="far fa-clock"></i> 13 min read</span>
+                </div>
+                
+                <h1 class="post-title">Smart Contract Development and Security: Best Practices</h1>
+                
+                <div class="post-tags">
+                    <span class="tag">Web3</span>
+                    <span class="tag">Blockchain</span>
+                </div>
+                
+                <div class="blog-author" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-author-img">
+                        <img src="../assets/images/profile2.jpg" alt="Yash Jangid">
+                    </div>
+                    <div class="blog-author-info">
+                        <h4>Yash Jangid</h4>
+                        <p>Full Stack Developer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-content" data-aos="fade-up" data-aos-delay="200">
+                <p>Smart contracts are self-executing programs that run on blockchain networks, automatically enforcing the terms of an agreement between parties. While they offer tremendous benefits in terms of trustlessness and automation, they also come with unique security challenges.</p>
+                
+                <p>In this comprehensive guide, we'll explore best practices for developing secure and efficient smart contracts, with a focus on Ethereum and Solidity.</p>
+                
+                <h2>Understanding Smart Contract Security Challenges</h2>
+                
+                <p>Smart contracts face unique security challenges:</p>
+                
+                <ul>
+                    <li><strong>Immutability:</strong> Once deployed, contracts cannot be modified (making bugs permanent)</li>
+                    <li><strong>Public Execution:</strong> All code and data are visible on the blockchain</li>
+                    <li><strong>Value at Stake:</strong> Contracts often manage significant financial assets</li>
+                    <li><strong>Complex Attack Vectors:</strong> Including reentrancy, front-running, and oracle manipulation</li>
+                </ul>
+                
+                <h2>Development Best Practices</h2>
+                
+                <h3>1. Follow Established Patterns</h3>
+                
+                <p>Use established and audited contract patterns and libraries:</p>
+                
+                <ul>
+                    <li>OpenZeppelin's contracts for standard functionalities</li>
+                    <li>Checks-Effects-Interactions pattern</li>
+                    <li>Pull over push payment patterns</li>
+                    <li>Emergency stop mechanisms</li>
+                </ul>
+                
+                <pre><code>
+// Using OpenZeppelin's ERC20 implementation
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract MyToken is ERC20 {
+    constructor(uint256 initialSupply) ERC20("MyToken", "MTK") {
+        _mint(msg.sender, initialSupply);
+    }
+}
+                </code></pre>
+                
+                <p>This guide covers essential best practices for developing secure smart contracts, helping you avoid common vulnerabilities and build more robust blockchain applications.</p>
+                
+                <div class="blog-nav">
+                    <a href="./post.html?id=8" class="blog-nav-prev"><i class="fas fa-arrow-left"></i> Node.js Security Best Practices</a>
+                    <a href="./post.html?id=1" class="blog-nav-next">Building Scalable React Applications <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="blog-comments" data-aos="fade-up" data-aos-delay="300">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <textarea placeholder="Share your thoughts..."></textarea>
+                    <button type="submit" class="btn primary-btn">Submit Comment</button>
+                </form>
+            </div>
+        `
+    }
+];
+
+// Function to get URL parameters
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    const results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
+
+// Function to load blog post content
+function loadBlogPost() {
+    // Get the post ID from URL
+    const postId = getUrlParameter('id') || 1;
+    const postIdNumber = parseInt(postId);
+    
+    // Find the post
+    const post = blogPosts.find(post => post.id === postIdNumber);
+    console.log('Loading post:', postId, post ? 'found' : 'not found');
+    
+    if (post) {
+        // Update meta tags
+        document.title = `${post.title} | Yash Jangid`;
+        document.querySelector('meta[name="title"]').setAttribute('content', `${post.title} | Yash Jangid`);
+        document.querySelector('meta[name="description"]').setAttribute('content', post.excerpt);
+        document.querySelector('meta[property="og:title"]').setAttribute('content', `${post.title} | Yash Jangid`);
+        document.querySelector('meta[property="og:description"]').setAttribute('content', post.excerpt);
+        document.querySelector('meta[property="og:image"]').setAttribute('content', `../assets/images/${post.id}.png`);
+        document.querySelector('meta[property="twitter:title"]').setAttribute('content', `${post.title} | Yash Jangid`);
+        document.querySelector('meta[property="twitter:description"]').setAttribute('content', post.excerpt);
+        document.querySelector('meta[property="twitter:image"]').setAttribute('content', `../assets/images/${post.id}.png`);
+        
+        // Get the blog content container
+        const blogContent = document.getElementById('blog-content');
+        
+        // Clear any existing content
+        if (blogContent) {
+            console.log('Blog content container found, setting content');
+            
+            // Remove any loading spinners
+            const spinners = blogContent.querySelectorAll('.loading-spinner');
+            spinners.forEach(spinner => spinner.remove());
+            
+            // Set the content (the template literal from blogPosts array)
+            blogContent.innerHTML = post.content;
+            
+            // Force a reflow by accessing offsetHeight
+            void blogContent.offsetHeight;
+            
+            // Ensure all images use local assets instead of Unsplash
+            const images = blogContent.querySelectorAll('img');
+            images.forEach(img => {
+                if (img.src.includes('unsplash')) {
+                    img.src = `../assets/images/${post.id}.png`;
+                }
+                
+                // Force image loading
+                img.onload = function() {
+                    console.log('Image loaded:', this.src);
+                };
+                
+                // Set explicit dimensions to prevent layout shifts
+                img.style.width = '100%';
+                img.style.display = 'block';
+            });
+            
+            // Make all content blocks visible
+            const contentBlocks = blogContent.querySelectorAll('div');
+            contentBlocks.forEach(block => {
+                block.style.display = 'block';
+                block.style.visibility = 'visible';
+                block.style.opacity = '1';
+            });
+            
+            // Force a re-flow to ensure styles are applied
+            blogContent.style.display = 'block';
+            blogContent.style.visibility = 'visible';
+            blogContent.style.opacity = '1';
+            
+            // Initialize AOS for animations
+            setTimeout(() => {
+                AOS.refresh();
+                console.log('AOS refreshed');
+            }, 200);
+        } else {
+            console.error('Blog content container not found');
+        }
+        
+        // Load recent posts in sidebar
+        loadRecentPosts(postIdNumber);
+    } else {
+        // Post not found, show error
+        const blogContent = document.getElementById('blog-content');
+        if (blogContent) {
+            blogContent.innerHTML = `
+                <div class="blog-banner">
+                    <img src="../assets/images/404.png" alt="Post Not Found">
+                </div>
+                
+                <div class="blog-detail-info">
+                    <h1 class="post-title">Post Not Found</h1>
+                </div>
+                
+                <div class="blog-content">
+                    <p>The blog post you're looking for could not be found. Please check the URL or go back to the <a href="./index.html">blog home page</a>.</p>
+                </div>
+            `;
+        }
+    }
+}
+
+// Function to load recent posts
+function loadRecentPosts(currentPostId) {
+    const recentPostsContainer = document.getElementById('recent-posts');
+    if (!recentPostsContainer) {
+        console.error('Recent posts container not found!');
+        return;
+    }
+    
+    let recentPostsHTML = '<h3 class="sidebar-title">Recent Posts</h3>';
+    
+    // Get most recent posts (excluding current one)
+    const recentPosts = blogPosts
+        .filter(post => post.id !== currentPostId)
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .slice(0, 3);
+    
+    recentPosts.forEach(post => {
+        recentPostsHTML += `
+            <div class="recent-post">
+                <div class="recent-post-img">
+                    <img src="../assets/images/${post.id}.png" alt="${post.title}">
+                </div>
+                <div class="recent-post-content">
+                    <h4><a href="./post.html?id=${post.id}">${post.title.length > 40 ? post.title.substring(0, 40) + '...' : post.title}</a></h4>
+                    <div class="recent-post-date">
+                        <i class="far fa-calendar-alt"></i> ${post.date}
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+    
+    recentPostsContainer.innerHTML = recentPostsHTML;
+}
+
+// Immediately invoke blog post loading
+(function() {
+    // Run immediately when script is parsed
+    setTimeout(function() {
+        loadBlogPost();
+        console.log('Blog post loaded');
+    }, 0);
+    
+    // Also run on DOMContentLoaded as a backup
+    document.addEventListener('DOMContentLoaded', function() {
+        loadBlogPost();
+    });
+})();
+</script>
+
+</body>
+</html>

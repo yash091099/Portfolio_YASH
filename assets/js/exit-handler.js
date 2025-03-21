@@ -65,11 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Only show once per session
         if (hasShownExitIntent) return;
         
-        exitModal.style.display = 'flex';
+        exitModal?.style?.display = 'flex';
         
         // Add subtle animation
         setTimeout(() => {
-            exitModal.style.opacity = '1';
+            exitModal?.style?.opacity = '1';
             exitModal.classList.add('active');
         }, 10);
         
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Hide exit modal
     function hideExitModal() {
-        exitModal.style.opacity = '0';
+        exitModal?.style?.opacity = '0';
         exitModal.classList.remove('active');
         
         setTimeout(() => {

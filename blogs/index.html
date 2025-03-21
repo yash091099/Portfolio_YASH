@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tech Blog | Yash Jangid</title>
+    <meta name="title" content="Tech Blog | Yash Jangid">
+    <meta name="description" content="Explore articles on MERN stack, Web3, blockchain technologies, and modern web development by Yash Jangid.">
+    <meta name="keywords" content="tech blog, mern stack, web3, blockchain, javascript, react, node.js, developer blog, full stack development, yash jangid">
+    <meta name="author" content="Yash Jangid">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <link rel="canonical" href="https://yashjangid.com/blogs/">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yashjangid.com/blogs/">
+    <meta property="og:title" content="Tech Blog | Yash Jangid">
+    <meta property="og:description" content="Explore articles on MERN stack, Web3, blockchain technologies, and modern web development by Yash Jangid.">
+    <meta property="og:image" content="https://yashjangid.com/assets/images/blog-preview.jpg">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yashjangid.com/blogs/">
+    <meta property="twitter:title" content="Tech Blog | Yash Jangid">
+    <meta property="twitter:description" content="Explore articles on MERN stack, Web3, blockchain technologies, and modern web development by Yash Jangid.">
+    <meta property="twitter:image" content="https://yashjangid.com/assets/images/blog-preview.jpg">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/modern-theme.css">
+    <link rel="stylesheet" href="./assets/css/blog.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Yash Jangid's Tech Blog",
+      "description": "Articles on MERN stack, Web3, blockchain technologies, and modern web development",
+      "url": "https://yashjangid.com/blogs/",
+      "author": {
+        "@type": "Person",
+        "name": "Yash Jangid",
+        "url": "https://yashjangid.com"
+      }
+    }
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="container navbar-container">
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> Yash Jangid</a>
+
+        <div id="theme-toggle" class="theme-toggle">
+            <i id="theme-icon" class="fas fa-moon"></i>
+        </div>
+
+        <div id="menu-btn" class="menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="/#home">Home</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#skills">Skills</a></li>
+                <li><a href="/#education">Education</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#experience">Experience</a></li>
+                <li><a class="active" href="/blogs/">Blogs</a></li>
+                <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="blog-hero">
+    <div class="container">
+        <div class="blog-hero-content" data-aos="fade-up">
+            <h1>Tech Insights & <span class="gradient-text">Expertise</span></h1>
+            <p>Explore my thoughts, tutorials and insights on modern web development, blockchain, and technology trends.</p>
+            
+            <div class="search-container">
+                <input type="text" id="blog-search" placeholder="Search articles...">
+                <button type="button" id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+</section>
+
+<section class="blog-tags">
+    <div class="container">
+        <div class="tags-container" data-aos="fade-up">
+            <button class="tag-btn active" data-tag="all">All Topics</button>
+            <button class="tag-btn" data-tag="react">React</button>
+            <button class="tag-btn" data-tag="nodejs">Node.js</button>
+            <button class="tag-btn" data-tag="javascript">JavaScript</button>
+            <button class="tag-btn" data-tag="web3">Web3</button>
+            <button class="tag-btn" data-tag="blockchain">Blockchain</button>
+            <button class="tag-btn" data-tag="frontend">Frontend</button>
+            <button class="tag-btn" data-tag="backend">Backend</button>
+            <button class="tag-btn" data-tag="devops">DevOps</button>
+        </div>
+    </div>
+</section>
+
+<section class="blog-posts">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="posts-container">
+                    <article class="post-card" data-tags="react javascript frontend" data-aos="fade-up" data-aos-delay="100">
+                        <div class="post-image">
+                            <img src="../assets/images/1.png" alt="Building Scalable React Applications">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> March 15, 2024</span>
+                                <span class="post-read-time"><i class="far fa-clock"></i> 8 min read</span>
+                            </div>
+                            <h2 class="post-title">Building Scalable React Applications: Architecture Patterns and Best Practices</h2>
+                            <p class="post-excerpt">Learn how to structure your React applications for scalability, maintainability, and performance. Explore component patterns, state management strategies, and code organization techniques.</p>
+                            <div class="post-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Frontend</span>
+                            </div>
+                            <!-- <a href="./post.html?id=1" class="read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a> -->
+                            <div class="post-share">
+                                <button class="share-btn"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <a href="#" target="_blank" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" target="_blank" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" target="_blank" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="post-card" data-tags="nodejs backend javascript" data-aos="fade-up" data-aos-delay="200">
+                        <div class="post-image">
+                            <img src="../assets/images/2.png" alt="Node.js Microservices">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> March 10, 2024</span>
+                                <span class="post-read-time"><i class="far fa-clock"></i> 10 min read</span>
+                            </div>
+                            <h2 class="post-title">Node.js Microservices: Design Patterns and Implementation Strategies</h2>
+                            <p class="post-excerpt">Discover how to design, build, and deploy microservices using Node.js. Learn about communication patterns, database strategies, and deployment considerations.</p>
+                            <div class="post-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Backend</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <!-- <a href="./post.html?id=2" class="read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a> -->
+                            <div class="post-share">
+                                <button class="share-btn"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <a href="#" target="_blank" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" target="_blank" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" target="_blank" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="post-card" data-tags="web3 blockchain javascript" data-aos="fade-up" data-aos-delay="300">
+                        <div class="post-image">
+                            <img src="../assets/images/3.png" alt="Web3 Development">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> March 5, 2024</span>
+                                <span class="post-read-time"><i class="far fa-clock"></i> 12 min read</span>
+                            </div>
+                            <h2 class="post-title">Getting Started with Web3 Development: Building Your First dApp</h2>
+                            <p class="post-excerpt">Learn the fundamentals of Web3 development and how to build decentralized applications (dApps). Explore interactions with smart contracts, blockchain integration, and user authentication.</p>
+                            <div class="post-tags">
+                                <span class="tag">Web3</span>
+                                <span class="tag">Blockchain</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <!-- <a href="./post.html?id=3" class="read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a> -->
+                            <div class="post-share">
+                                <button class="share-btn"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <a href="#" target="_blank" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" target="_blank" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" target="_blank" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="post-card" data-tags="javascript frontend" data-aos="fade-up" data-aos-delay="100">
+                        <div class="post-image">
+                            <img src="../assets/images/4.png" alt="Modern JavaScript Features">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> February 28, 2024</span>
+                                <span class="post-read-time"><i class="far fa-clock"></i> 7 min read</span>
+                            </div>
+                            <h2 class="post-title">Modern JavaScript Features Every Developer Should Know</h2>
+                            <p class="post-excerpt">Discover the latest JavaScript features that can help you write more concise, readable, and maintainable code. Learn about ES6+ syntax, async/await, destructuring, and more.</p>
+                            <div class="post-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Frontend</span>
+                            </div>
+                            <!-- <a href="./post.html?id=4" class="read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a> -->
+                            <div class="post-share">
+                                <button class="share-btn"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <a href="#" target="_blank" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" target="_blank" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" target="_blank" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="post-card" data-tags="blockchain web3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="post-image">
+                            <img src="../assets/images/5.png" alt="Blockchain Fundamentals">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> February 20, 2024</span>
+                                <span class="post-read-time"><i class="far fa-clock"></i> 11 min read</span>
+                            </div>
+                            <h2 class="post-title">Blockchain Fundamentals: Understanding the Core Concepts</h2>
+                            <p class="post-excerpt">Explore the fundamental concepts behind blockchain technology. Learn about decentralization, consensus mechanisms, cryptographic hashing, and smart contracts.</p>
+                            <div class="post-tags">
+                                <span class="tag">Blockchain</span>
+                                <span class="tag">Web3</span>
+                            </div>
+                            <!-- <a href="./post.html?id=5" class="read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a> -->
+                            <div class="post-share">
+                                <button class="share-btn"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <a href="#" target="_blank" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" target="_blank" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" target="_blank" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="post-card" data-tags="devops backend" data-aos="fade-up" data-aos-delay="300">
+                        <div class="post-image">
+                            <img src="../assets/images/6.png" alt="CI/CD Pipeline">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date"><i class="far fa-calendar-alt"></i> February 15, 2024</span>
+                                <span class="post-read-time"><i class="far fa-clock"></i> 9 min read</span>
+                            </div>
+                            <h2 class="post-title">Building a CI/CD Pipeline for Modern Web Applications</h2>
+                            <p class="post-excerpt">Learn how to set up a robust continuous integration and continuous deployment pipeline for your web applications using GitHub Actions, Docker, and cloud platforms.</p>
+                            <div class="post-tags">
+                                <span class="tag">DevOps</span>
+                                <span class="tag">Backend</span>
+                            </div>
+                            <!-- <a href="./post.html?id=6" class="read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a> -->
+                            <div class="post-share">
+                                <button class="share-btn"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-options">
+                                    <a href="#" target="_blank" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" target="_blank" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" target="_blank" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <div class="hidden-posts">
+                        <article class="post-card" data-tags="react frontend" data-aos="fade-up" data-aos-delay="100">
+                            <div class="post-image">
+                                <img src="../assets/images/7.png" alt="React Performance Optimization">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar-alt"></i> February 10, 2024</span>
+                                    <span class="post-read-time"><i class="far fa-clock"></i> 8 min read</span>
+                                </div>
+                                <h2 class="post-title">React Performance Optimization Techniques</h2>
+                                <p class="post-excerpt">Discover strategies for improving the performance of your React applications. Learn about memoization, code splitting, virtualization, and state management optimizations.</p>
+                                <div class="post-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">Frontend</span>
+                                </div>
+                                <!-- <a href="./post.html?id=7" class="read-more">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a> -->
+                                <div class="post-share">
+                                    <button class="share-btn"><i class="fas fa-share-alt"></i></button>
+                                    <div class="share-options">
+                                        <a href="#" target="_blank" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" target="_blank" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" target="_blank" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <article class="post-card" data-tags="nodejs backend" data-aos="fade-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <img src="../assets/images/8.png" alt="Node.js Security">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar-alt"></i> February 5, 2024</span>
+                                    <span class="post-read-time"><i class="far fa-clock"></i> 10 min read</span>
+                                </div>
+                                <h2 class="post-title">Node.js Security Best Practices for Production Applications</h2>
+                                <p class="post-excerpt">Learn essential security practices for deploying Node.js applications to production. Explore common vulnerabilities, authentication strategies, and security tools.</p>
+                                <div class="post-tags">
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">Backend</span>
+                                </div>
+                                <!-- <a href="./post.html?id=8" class="read-more">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a> -->
+                                <div class="post-share">
+                                    <button class="share-btn"><i class="fas fa-share-alt"></i></button>
+                                    <div class="share-options">
+                                        <a href="#" target="_blank" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" target="_blank" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" target="_blank" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <article class="post-card" data-tags="web3 blockchain" data-aos="fade-up" data-aos-delay="300">
+                            <div class="post-image">
+                                <img src="../assets/images/9.png" alt="Smart Contract Development">
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar-alt"></i> January 30, 2024</span>
+                                    <span class="post-read-time"><i class="far fa-clock"></i> 13 min read</span>
+                                </div>
+                                <h2 class="post-title">Smart Contract Development and Security: Best Practices</h2>
+                                <p class="post-excerpt">Learn how to write secure and efficient smart contracts for blockchain applications. Explore common vulnerabilities, testing strategies, and auditing processes.</p>
+                                <div class="post-tags">
+                                    <span class="tag">Web3</span>
+                                    <span class="tag">Blockchain</span>
+                                </div>
+                                <!-- <a href="./post.html?id=9" class="read-more">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </a> -->
+                                <div class="post-share">
+                                    <button class="share-btn"><i class="fas fa-share-alt"></i></button>
+                                    <div class="share-options">
+                                        <a href="#" target="_blank" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" target="_blank" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" target="_blank" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+<!--     
+                    <div class="load-more-container" data-aos="fade-up">
+                        <button id="load-more-btn" class="btn primary-btn">
+                            <span>Load More</span>
+                            <i class="fas fa-spinner"></i>
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+            
+            <div class="col-lg-3 " style="margin-top: 50px ;">
+                <div class="sidebar" data-aos="fade-left" data-aos-delay="300">
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">Popular Tags</h3>
+                        <div class="sidebar-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Web3</span>
+                            <span class="tag">Blockchain</span>
+                            <span class="tag">Frontend</span>
+                            <span class="tag">Backend</span>
+                            <span class="tag">DevOps</span>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-section sidebar-recent">
+                        <h3 class="sidebar-title">Recent Posts</h3>
+                        
+                        <div class="recent-post">
+                            <div class="recent-post-img">
+                                <img src="../assets/images/1.png" alt="React Post">
+                            </div>
+                            <div class="recent-post-content">
+                                <h4><a href="./post.html?id=1">Building Scalable React Applications</a></h4>
+                                <div class="recent-post-date">
+                                    <i class="far fa-calendar-alt"></i> March 15, 2024
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="recent-post">
+                            <div class="recent-post-img">
+                                <img src="../assets/images/2.png" alt="Node.js Post">
+                            </div>
+                            <div class="recent-post-content">
+                                <h4><a href="./post.html?id=2">Node.js Microservices: Design Patterns</a></h4>
+                                <div class="recent-post-date">
+                                    <i class="far fa-calendar-alt"></i> March 10, 2024
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="recent-post">
+                            <div class="recent-post-img">
+                                <img src="../assets/images/3.png" alt="Web3 Post">
+                            </div>
+                            <div class="recent-post-content">
+                                <h4><a href="./post.html?id=3">Getting Started with Web3 Development</a></h4>
+                                <div class="recent-post-date">
+                                    <i class="far fa-calendar-alt"></i> March 5, 2024
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter">
+    <div class="container">
+        <div class="newsletter-container" data-aos="fade-up">
+            <div class="newsletter-content">
+                <h2>Subscribe to My Newsletter</h2>
+                <p>Get notified when I publish new articles and tech insights. No spam, just valuable content.</p>
+            </div>
+            <form class="newsletter-form">
+                <div class="form-group">
+                    <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                    <button type="submit" class="btn primary-btn">
+                        <span>Subscribe</span>
+
+                        </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="/">
+                    <i class="fab fa-node-js"></i>
+                    <span>Yash Jangid</span>
+                </a>
+                <p>Full Stack Developer specializing in MERN/MEAN stack, Web3 and blockchain technologies.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="/#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                    <li><a href="/#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                    <li><a href="/#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                    <li><a href="/#experience"><i class="fas fa-chevron-right"></i> Experience</a></li>
+                    <li><a href="/blogs/"><i class="fas fa-chevron-right"></i> Blogs</a></li>
+                    <li><a href="/#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan, India - 302012</p>
+                <p><i class="fas fa-phone-alt"></i> +91 6377966657</p>
+                <p><i class="fas fa-envelope"></i> gityash2024@gmail.com</p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/yash-jangid-397420166/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/gityash2024" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:gityash2024@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kashapyash/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 <span>Yash Jangid</span> | All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+<div id="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+<div class="toast" id="toast-notification">
+    <i class="fas fa-check-circle"></i>
+    <span>Notification message here</span>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="./assets/js/blog.js"></script>
+<script src="../assets/js/exit-handler.js"></script>
+
+</body>
+</html>

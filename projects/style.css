@@ -17,7 +17,7 @@ html{
 }
 body{
   background: #f7f7f7;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins' ;
 }
 
 *::selection{
@@ -303,7 +303,7 @@ header .navbar ul li a:hover{
 .backbtn .btn span {
   font-weight: 600;
   font-size: 1.7rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito' ;
 }
 .backbtn .btn i {
   margin-right: 0.5rem;

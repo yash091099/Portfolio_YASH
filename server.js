@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8000;
 
 const MIME_TYPES = {
   '.html': 'text/html',
@@ -25,7 +25,6 @@ const MIME_TYPES = {
 const server = http.createServer((req, res) => {
   console.log(`Request: ${req.method} ${req.url}`);
   
-  // Handle favicon requests
   if (req.url === '/favicon.ico') {
     const faviconPath = path.join(__dirname, 'assets', 'images', 'favicon.png');
     fs.readFile(faviconPath, (err, data) => {
@@ -40,46 +39,85 @@ const server = http.createServer((req, res) => {
     return;
   }
   
-  // Parse URL to get the pathname
-  let filePath = '.' + req.url;
-  if (filePath === './') {
-    filePath = './index.html';
-  }
+  let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url);
   
-  // Get file extension
-  const extname = path.extname(filePath);
-  let contentType = MIME_TYPES[extname] || 'application/octet-stream';
-  
-  // Read file
-  fs.readFile(filePath, (err, content) => {
+  // Check if path exists
+  fs.access(filePath, fs.constants.F_OK, (err) => {
     if (err) {
-      // If the file doesn't exist, serve 404.html
-      if (err.code === 'ENOENT') {
-        console.log(`File not found: ${filePath}`);
-        
-        fs.readFile('./404.html', (err, content) => {
-          if (err) {
-            res.writeHead(500);
-            res.end('Server Error');
+      // Path doesn't exist, check if it's a directory path without trailing slash
+      if (req.url.endsWith('/')) {
+        // Try index.html in that directory
+        filePath = path.join(filePath, 'index.html');
+      } else {
+        // Try adding trailing slash and seeing if that directory exists
+        const dirPath = filePath + '/';
+        fs.access(dirPath, fs.constants.F_OK, (dirErr) => {
+          if (!dirErr) {
+            // Directory exists, redirect to add trailing slash
+            res.writeHead(301, { 'Location': req.url + '/' });
+            res.end();
+            return;
+          } else {
+            // Neither file nor directory exists, serve 404
+            serveNotFound(res);
             return;
           }
-          
-          res.writeHead(404, { 'Content-Type': 'text/html' });
-          res.end(content, 'utf-8');
+        });
+        return;
+      }
+    }
+    
+    // Check if it's a directory
+    fs.stat(filePath, (err, stats) => {
+      if (err) {
+        serveNotFound(res);
+        return;
+      }
+      
+      if (stats.isDirectory()) {
+        // It's a directory, try to serve index.html from it
+        const indexPath = path.join(filePath, 'index.html');
+        fs.access(indexPath, fs.constants.F_OK, (err) => {
+          if (err) {
+            serveNotFound(res);
+            return;
+          }
+          serveFile(indexPath, res);
         });
       } else {
-        // Server error
-        res.writeHead(500);
-        res.end(`Server Error: ${err.code}`);
+        // It's a file, serve it
+        serveFile(filePath, res);
       }
-    } else {
-      // Success - send the file
-      res.writeHead(200, { 'Content-Type': contentType });
-      res.end(content, 'utf-8');
-    }
+    });
   });
 });
 
+function serveFile(filepath, res) {
+  const extname = path.extname(filepath);
+  const contentType = MIME_TYPES[extname] || 'application/octet-stream';
+  
+  fs.readFile(filepath, (err, content) => {
+    if (err) {
+      serveNotFound(res);
+      return;
+    }
+    res.writeHead(200, { 'Content-Type': contentType });
+    res.end(content, 'utf-8');
+  });
+}
+
+function serveNotFound(res) {
+  fs.readFile(path.join(__dirname, '404.html'), (err, content) => {
+    if (err) {
+      res.writeHead(500);
+      res.end('Server Error');
+      return;
+    }
+    res.writeHead(404, { 'Content-Type': 'text/html' });
+    res.end(content, 'utf-8');
+  });
+}
+
 server.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}/`);
-}); 
+});
